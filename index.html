@@ -8,10 +8,27 @@
     <script src="https://davidsonbpe.github.io/pwa/pwacompat.js"></script>
 
     <script>
-        
         if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('https://davidsonbpe.github.io/pwa/sw.js')
+            navigator.serviceWorker.register('./sw.js')
         }
+
+        btnAddToHomeScreen.addEventListener('click', function() {
+            if (deferredPrompt !== undefined) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(function(choiceResult) {
+
+                    console.log(choiceResult.outcome);
+
+                    if (choiceResult.outcome == 'dismissed') {
+                        console.log('User cancelled home screen install');
+                    } else {
+                        console.log('User added to home screen');
+                    }
+
+                    deferredPrompt = null;
+                });
+            }
+        });
 
     </script>
     <style>
@@ -56,6 +73,11 @@
 <body>
     
     <div class="header"></div>
+    
+    <div class="btn-group">
+        <button class="button" id="btnAddToHomeScreen" tabindex="0" data-trigger="click" style="position:fixed;top:21px;right:8px; z-index: 99999;"><img class="fa-chomes" src="pwa/chomes.png" height="20">
+        </button>
+    </div>
 
     <div class="footer"></div>
 
