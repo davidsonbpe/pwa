@@ -7,45 +7,7 @@
     <link rel="manifest" href="https://davidsonbpe.github.io/pwa/manifest.json" />
     <script src="https://davidsonbpe.github.io/pwa/pwacompat.js"></script>
 
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('./sw.js')
-        }
-
-        var deferredPrompt;
-
-        window.addEventListener('beforeinstallprompt', function(e) {
-            console.log('beforeinstallprompt Event fired');
-            //e.preventDefault();
-            deferredPrompt = e;
-
-            return false;
-        });
-
-        btnAddToHomeScreen.addEventListener('click', function() {
-            if (deferredPrompt !== undefined) {
-                // The user has had a postive interaction with our app and Chrome
-                // has tried to prompt previously, so let's show the prompt.
-                deferredPrompt.prompt();
-
-                // Follow what the user has done with the prompt.
-                deferredPrompt.userChoice.then(function(choiceResult) {
-
-                    console.log(choiceResult.outcome);
-
-                    if (choiceResult.outcome == 'dismissed') {
-                        console.log('User cancelled home screen install');
-                    } else {
-                        console.log('User added to home screen');
-                    }
-
-                    // We no longer need the prompt.  Clear it up.
-                    deferredPrompt = null;
-                });
-            }
-        });
-
-    </script>
+    
     <style>
         body {
             background: #ffcc00;
@@ -95,6 +57,46 @@
     </div>
 
     <div class="footer"></div>
+    
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+
+        var deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            console.log('beforeinstallprompt Event fired');
+            //e.preventDefault();
+            deferredPrompt = e;
+
+            return false;
+        });
+
+        btnAddToHomeScreen.addEventListener('click', function() {
+            if (deferredPrompt !== undefined) {
+                // The user has had a postive interaction with our app and Chrome
+                // has tried to prompt previously, so let's show the prompt.
+                deferredPrompt.prompt();
+
+                // Follow what the user has done with the prompt.
+                deferredPrompt.userChoice.then(function(choiceResult) {
+
+                    console.log(choiceResult.outcome);
+
+                    if (choiceResult.outcome == 'dismissed') {
+                        console.log('User cancelled home screen install');
+                    } else {
+                        console.log('User added to home screen');
+                    }
+
+                    // We no longer need the prompt.  Clear it up.
+                    deferredPrompt = null;
+                });
+            }
+        });
+
+    </script>
 
 </body>
 
