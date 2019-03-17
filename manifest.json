@@ -3,39 +3,39 @@
   "short_name": "PWA-Dev",
   "icons": [
     {
-      "src": "pwa/logo-192.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-192.png",
       "sizes": "192x192"
     },
     {
-      "src": "pwa/logo-180.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-180.png",
       "sizes": "180x180"
     },
     {
-      "src": "pwa/logo-152.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-152.png",
       "sizes": "152x152"
     },
     {
-      "src": "pwa/logo-144.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-144.png",
       "sizes": "144x144"
     },
     {
-      "src": "pwa/logo-128.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-128.png",
       "sizes": "128x128"
     },
     {
-      "src": "pwa/logo-128.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-128.png",
       "sizes": "128x128"
     },
     {
-      "src": "pwa/logo-120.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-120.png",
       "sizes": "120x120"
     },
     {
-      "src": "pwa/logo-114.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-114.png",
       "sizes": "114x114"
     },
     {
-      "src": "pwa/logo-16.png",
+      "src": "https://davidsonbpe.github.io/pwa/pwa/logo-16.png",
       "sizes": "16x16"
     }
   ],
