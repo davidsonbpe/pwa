@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PWA-Dev</title>
+    <meta name="viewport" content="initial-scale=1 viewport-fit=cover">
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./pwacompat.js"></script>
+
+    <script>
+        
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+
+    </script>
+    <style>
+        body {
+            border-top: 10px solid #c3c3cb;
+            background: #414141;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            color: aliceblue;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>PWA</h1>
+
+</body>
+
+</html>
