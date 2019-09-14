@@ -1,0 +1,16 @@
+{
+    "name": "PWA-Dev",
+    "short_name": "PWA-Dev",
+    "icons": [
+        {
+            "src": "./icon.png",
+            "sizes": "144x144"
+        }
+    ],
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "./?homescreen=true",
+    "orientation": "portrait",
+    "theme_color": "#232d53",
+    "background_color": "#2c3e50"
+}

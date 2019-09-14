@@ -2,7 +2,7 @@
 
 # [Pwa](#)
 
-## Installation
+## INSTALLATION
 
 1. Clone this repo
 
@@ -11,9 +11,9 @@
   ```
 
 
-## Baunilha HTML
+## HTML
 
-1. A maneira mais fácil de começar a usar o PWA é adicionando uma tag de script
+1. A maneira de começar a usar o PWA é adicionando a uma tag de script
 
  ```html
   <link rel="manifest" href="./manifest.json" />
@@ -28,3 +28,8 @@
 * [CANAL DECOM TV](https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg/)
 
 * [DEMO](https://davidsonbpe.github.io/)
+
+## DEVELOPER
+
+* [@davidsonbpe](https://github.com/davidsonbpe)
+
