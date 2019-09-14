@@ -1,6 +1,6 @@
 ### <p align="center"><img width="150px" height="150px" src="icon.png"></p>
 
-# [Pwa](#)
+# [PWA](#)
 
 ## INSTALLATION
 
