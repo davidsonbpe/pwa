@@ -25,7 +25,4 @@
 
 1. Veja video tutorial Completo neste link
 
- ```bash
 * [CANAL DECOM TV](https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg/)
-
-  ```
