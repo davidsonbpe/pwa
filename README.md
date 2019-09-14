@@ -7,13 +7,13 @@
 1. Clone this repo
 
   ```bash
-  git clone https://github.com/davidsonbpe/pwa-serv
+  git clone https://github.com/davidsonbpe/pwa
   ```
 
 
 ## Baunilha HTML
 
-2. A maneira mais fácil de começar a usar o PWA é adicionando uma tag de script
+1. A maneira mais fácil de começar a usar o PWA é adicionando uma tag de script
 
  ```bash
   <link rel="manifest" href="./manifest.json" />
@@ -21,3 +21,11 @@
   <script> if (navigator.serviceWorker) { navigator.serviceWorker.register ('./sw.js') } </script>
   ```
 
+## TUTORIAL
+
+1. Veja video tutorial Completo neste link
+
+ ```bash
+* [CANAL DECOM TV](https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg/)
+
+  ```
