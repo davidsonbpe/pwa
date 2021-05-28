@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DECOM PWA</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+
+    <style>
+        .home-container .row-center img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+
+    <script type="module">
+        import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.menuController = menuController;
+    </script>
+
+</head>
+
+<body>
+
+    <ion-app>
+        <ion-header translucent>
+            <ion-toolbar color="dark">
+                <ion-buttons slot="start" onclick="openMenu()">
+                    <ion-menu-button auto-hide="false"></ion-menu-button>
+                </ion-buttons>
+
+                <ion-buttons slot="end">
+                    <ion-menu-button color="dark" auto-hide="false"></ion-menu-button>
+                </ion-buttons>
+
+                <ion-title class="ion-text-uppercase ion-text-center">DECOM PWA</ion-title>
+
+            </ion-toolbar>
+        </ion-header>
+
+
+        <ion-menu side="start" content-id="main-content">
+            <ion-header>
+                <ion-toolbar translucent color="dark">
+                    <ion-title>MENU</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+
+                    <ion-item button>
+                        <ion-icon slot="start" name="earth"></ion-icon>
+                        <ion-label>
+                            <h3>WEB SITE</h3>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item button>
+                        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+                        <ion-label>
+                            <h3>FACEBOOK</h3>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item button>
+                        <ion-icon slot="start" name="logo-tiktok"></ion-icon>
+                        <ion-label>
+                            <h3>TIKTOK</h3>
+                        </ion-label>
+                    </ion-item>
+
+
+                    <ion-item button>
+                        <ion-icon slot="start" name="logo-twitter"></ion-icon>
+                        <ion-label>
+                            <h3>TWITTER</h3>
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item button>
+                        <ion-icon slot="start" name="share-social-outline"></ion-icon>
+                        <ion-label>
+                            <h3>SHARE</h3>
+                        </ion-label>
+                    </ion-item>
+
+                </ion-list>
+
+            </ion-content>
+        </ion-menu>
+
+        <ion-content fullscreen class="ion-padding " color="dark" id="main-content">
+
+
+            <section class="home-container">
+                <div class="row row-center">
+                    <div class="col text-center">
+                        <img alt="Logo" height="280"
+                            src="https://static.vecteezy.com/system/resources/previews/001/206/549/non_2x/music-speaker-png.png">
+                    </div>
+                </div>
+            </section>
+
+
+        </ion-content>
+
+
+        <ion-footer>
+            <ion-toolbar color="dark">
+                <ion-segment>
+
+                    <ion-segment-button value="standard">
+                        <ion-icon name="play"></ion-icon>
+                    </ion-segment-button>
+
+                    <ion-segment-button value="hybrid">
+                        <ion-icon name="pause"></ion-icon>
+                    </ion-segment-button>
+
+                    <ion-segment-button value="sat">
+                        <ion-icon name="square"></ion-icon>
+                    </ion-segment-button>
+
+                </ion-segment>
+            </ion-toolbar>
+        </ion-footer>
+
+
+    </ion-app>
+
+    <pwa-install style="position: fixed;bottom: 65px;right: 10px;" role="button">
+        <ion-icon name="download-outline"></ion-icon> Install
+    </pwa-install>
+
+    <script type="module" src="./build/pwa-install.js"></script>
+
+    <script>
+        async function openMenu() {
+            await menuController.open();
+        }
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

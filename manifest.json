@@ -1,0 +1,66 @@
+{
+  "name": "DECOM PWA",
+  "short_name": "DECOM PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Transforme aplicativos em multiplataforma com o DECOM PWA!",
+  "screenshots": [
+    {
+      "src": "https://1.bp.blogspot.com/-SJqHHWt_PEU/YJGhkF0QRwI/AAAAAAAAA8s/HgkPI7wMVtoNrE_AFKmpqRQL7IuP_n2gwCLcBGAsYHQ/s256/01.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-stkiMhYwlUY/YJGhkKxiA3I/AAAAAAAAA80/CzS3VnoiUhwd7EazAmDgGUEeKuzfhyceQCLcBGAsYHQ/s256/02.png?v=1591213289513",
+      "sizes": "256x256",
+      "type":"image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-pLhTTbKUd_U/YJGhkDTMQJI/AAAAAAAAA8o/4xLGgqr7OLcavN3Tk_d7r5Hp4_j3GOjnQCLcBGAsYHQ/s256/03.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-wlbrJ_Lq0yo/YJGhkrKuFMI/AAAAAAAAA8w/caWhU_rLQaEbFgf79yq1UAWuZnqiEbB5ACLcBGAsYHQ/s256/04.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+  "icons": [
+    {
+      "src": "https://1.bp.blogspot.com/-wLY3GVb3dmQ/YJGo4aYuoLI/AAAAAAAAA9E/pItXfV4jEOIA6ZDY68zCZkIzC9U_QYdiwCLcBGAsYHQ/s512/inco.png?v=1573316715288",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-wLY3GVb3dmQ/YJGo4aYuoLI/AAAAAAAAA9E/pItXfV4jEOIA6ZDY68zCZkIzC9U_QYdiwCLcBGAsYHQ/s256/inco.png?v=1573316684080",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-wLY3GVb3dmQ/YJGo4aYuoLI/AAAAAAAAA9E/pItXfV4jEOIA6ZDY68zCZkIzC9U_QYdiwCLcBGAsYHQ/s144/inco.png?v=1573316684080",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-wLY3GVb3dmQ/YJGo4aYuoLI/AAAAAAAAA9E/pItXfV4jEOIA6ZDY68zCZkIzC9U_QYdiwCLcBGAsYHQ/s72/inco.png?v=1573316684080",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-wLY3GVb3dmQ/YJGo4aYuoLI/AAAAAAAAA9E/pItXfV4jEOIA6ZDY68zCZkIzC9U_QYdiwCLcBGAsYHQ/s36/inco.png?v=1573316684080",
+      "sizes": "36x36",
+      "type": "image/png"
+    }
+    
+    
+  ],
+  "background_color": "#333",
+  "theme_color": "#335"
+}
