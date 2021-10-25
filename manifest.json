@@ -1,9 +1,11 @@
 {
   "name": "DECOM PWA",
   "short_name": "DECOM PWA",
-  "start_url": "/",
-  "display": "standalone",
   "description": "Transforme aplicativos em multiplataforma com o DECOM PWA!",
+  "start_url": "/pwa/?app",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "portrait",
   "screenshots": [
     {
       "src": "https://1.bp.blogspot.com/-SJqHHWt_PEU/YJGhkF0QRwI/AAAAAAAAA8s/HgkPI7wMVtoNrE_AFKmpqRQL7IuP_n2gwCLcBGAsYHQ/s256/01.png?v=1573316626664",
